@@ -1,0 +1,72 @@
+/* Full-screen layout */
+.dashboard {
+    width: 100vw;
+    min-height: 200vh; /* Ensure full screen */
+   background-color: #333333 ;
+ 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card h2{
+    color: red;
+}
+/* Title Styling */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Ensure all cards have the same height */
+.card h2{
+    color: white;
+}
+.card {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 350px; /* Fixed height */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button stays at the bottom */
+}
+
+/* Make sure slots & button stay in the same row */
+.slot-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Push it to the bottom */
+}
+
+
+/* Book Now Button */
+.book-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-button:hover {
+    background-color: darkblue;
+}
